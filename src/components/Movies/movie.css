@@ -1,0 +1,39 @@
+
+.movie__container {
+  width: 300px;
+  position: relative;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+   margin: 2rem; 
+}
+img {
+  max-width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #020241;
+}
+.movie-overview {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  color: #020241;
+  transform: translateY(-100%);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 1rem 1rem;
+
+  transition: transform 250ms ease-in-out;
+}
+.movie__container:hover .movie-overview {
+  transform: translateY(0%);
+}
+span {
+  background-color: #363672;
+  border-radius: 5px;
+}
